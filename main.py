@@ -119,11 +119,11 @@ def return_texts(attr, old, new):
 
     df = pd.DataFrame(cars, columns= ['Brand', 'Price'])
 
-    df.to_csv (output_path, index = False, header=True)
+    df.to_csv(output_path, index = False, header=True)
 
     # i += 1
     # recommendations.to_csv(output_path)
-    subprocess.run(['open', output_path], check=True)
+    # subprocess.run(['open', output_path], check=True)
     # print(cwd)
 
 file_input = FileInput(accept=".txt,.pdf,")
