@@ -53,8 +53,6 @@ dash-core-components==1.6.0
 dash-html-components==1.0.2
 dash-renderer==1.2.2
 dash-table==4.5.1
-dask @ file:///tmp/build/80754af9/dask-core_1592842333140/work
-datashader @ file:///tmp/build/80754af9/datashader_1592412699516/work
 datashape==0.5.4
 decorator==4.4.2
 defusedxml==0.6.0
