@@ -1,1 +1,1 @@
-web: bokeh serve --port=$PORT rahmed31.GitHub.io/ --allow-websocket-origin=nlpclustering.herokuapp.com --address=0.0.0.0 --use-xheaders
+web: bokeh serve --port=$PORT main.py --allow-websocket-origin=nlpclustering.herokuapp.com --address=0.0.0.0 --use-xheaders
