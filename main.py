@@ -6,8 +6,8 @@ from tornado.ioloop import IOLoop
 import pandas as pd
 
 # required libraries for plot
-from bokeh_functions.plot_text import cite, notes, dataset_description, header, description, description2, description_search, description_slider, description_text_input
-from bokeh_functions.call_backs import selected_code, input_callback
+from plot_text import cite, notes, dataset_description, header, description, description2, description_search, description_slider, description_text_input
+from call_backs import selected_code, input_callback
 import bokeh
 from bokeh.models import ColumnDataSource, HoverTool, LinearColorMapper, CustomJS, Slider, TapTool, TextInput, RadioButtonGroup, Div, Paragraph, FileInput, DataTable, TableColumn
 from bokeh.palettes import Category20
@@ -24,14 +24,14 @@ i = 1
 
 # doc = curdoc()
 
-topic_path = 'lib/topics.txt'
+topic_path = 'topics.txt'
 with open(topic_path) as f:
     topics = f.readlines()
 
-X_embedded = np.load('lib/X_embedded.npy')
-y_pred = np.load('lib/y_pred.npy')
+X_embedded = np.load('X_embedded.npy')
+y_pred = np.load('y_pred.npy')
 
-df = pickle.load(open('lib/df_processed.pickle', "rb" ))
+df = pickle.load(open('df_processed.pickle', "rb" ))
 
 df.info()
 
