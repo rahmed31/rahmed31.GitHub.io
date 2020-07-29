@@ -110,7 +110,8 @@ keyword = TextInput(title="Search:", callback = input_callback_1)
 def return_texts(attr, old, new):
     # global i
     cwd = os.getcwd()
-    output_path = os.path.join(cwd,'TextRecommendations' + str(i) + '.csv')
+    # output_path = os.path.join(cwd,'TextRecommendations' + str(i) + '.csv')
+    output_path = os.path.join(cwd,'TextRecommendations.csv')
 
     cars = {'Brand': ['Honda Civic','Toyota Corolla','Ford Focus','Audi A4'],
         'Price': [22000,25000,27000,35000]
