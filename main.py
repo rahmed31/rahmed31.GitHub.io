@@ -20,7 +20,7 @@ from bokeh.application import Application
 from bokeh.server.server import Server
 
 # def main():
-i = 1
+# i = 1
 
 # doc = curdoc()
 
@@ -108,7 +108,7 @@ keyword = TextInput(title="Search:", callback = input_callback_1)
 
 #Edit function so that file outputs top recommendation as csv file in current working directory
 def return_texts(attr, old, new):
-    global i
+    # global i
     cwd = os.getcwd()
     output_path = os.path.join(cwd,'TextRecommendations' + str(i) + '.csv')
 
@@ -120,7 +120,7 @@ def return_texts(attr, old, new):
 
     df.to_csv (output_path, index = False, header=True)
 
-    i += 1
+    # i += 1
     # recommendations.to_csv(output_path)
     subprocess.run(['open', output_path], check=True)
     # print(cwd)
