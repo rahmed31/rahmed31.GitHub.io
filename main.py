@@ -22,7 +22,7 @@ from bokeh.server.server import Server
 # def main():
 i = 1
 
-doc = curdoc()
+# doc = curdoc()
 
 topic_path = 'lib/topics.txt'
 with open(topic_path) as f:
@@ -206,10 +206,7 @@ l = layout([
 
 l.sizing_mode = "scale_both"
 
-doc.add_root(l)
+curddoc().add_root(l)
 # doc.title = "Display of Clusters"
 # show(l)
 # curdoc().add_root(l)
-
-if __name__ == '__main__':
-    main()
