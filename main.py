@@ -206,7 +206,7 @@ l = layout([
 
 l.sizing_mode = "scale_both"
 
-curddoc().add_root(l)
+curdoc().add_root(l)
 # doc.title = "Display of Clusters"
 # show(l)
 # curdoc().add_root(l)
