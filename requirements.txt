@@ -195,7 +195,6 @@ Pygments==2.6.1
 pyLDAvis==2.1.2
 pylint==2.4.4
 PyMySQL==0.9.3
-pyodbc===4.0.0-unsupported
 pyOpenSSL==19.1.0
 pyparsing==2.4.6
 PyPDF2==1.26.0
