@@ -107,27 +107,27 @@ keyword = TextInput(title="Search:", callback = input_callback_1)
 # keyword.js_on_change('value', callback)
 
 #Edit function so that file outputs top recommendation as csv file in current working directory
-def return_texts(attr, old, new):
-    # global i
-    cwd = os.getcwd()
-    # output_path = os.path.join(cwd,'TextRecommendations' + str(i) + '.csv')
-    output_path = os.path.join(cwd,'TextRecommendations.csv')
+# def return_texts(attr, old, new):
+#     # global i
+#     cwd = os.getcwd()
+#     # output_path = os.path.join(cwd,'TextRecommendations' + str(i) + '.csv')
+#     output_path = os.path.join(cwd,'TextRecommendations.csv')
+#
+#     cars = {'Brand': ['Honda Civic','Toyota Corolla','Ford Focus','Audi A4'],
+#         'Price': [22000,25000,27000,35000]
+#         }
+#
+#     df = pd.DataFrame(cars, columns= ['Brand', 'Price'])
+#
+#     df.to_csv(output_path, index = False, header=True)
+#
+#     # i += 1
+#     # recommendations.to_csv(output_path)
+#     # subprocess.run(['open', output_path], check=True)
+#     # print(cwd)
 
-    cars = {'Brand': ['Honda Civic','Toyota Corolla','Ford Focus','Audi A4'],
-        'Price': [22000,25000,27000,35000]
-        }
-
-    df = pd.DataFrame(cars, columns= ['Brand', 'Price'])
-
-    df.to_csv(output_path, index = False, header=True)
-
-    # i += 1
-    # recommendations.to_csv(output_path)
-    # subprocess.run(['open', output_path], check=True)
-    # print(cwd)
-
-file_input = FileInput(accept=".txt,.pdf,")
-file_input.on_change('value', return_texts)
+# file_input = FileInput(accept=".txt,.pdf,")
+# file_input.on_change('value', return_texts)
 
 #pass call back arguments
 input_callback_1.args["text"] = keyword
@@ -158,12 +158,12 @@ description_text_input.style ={'font-family': 'Helvetica Neue, Helvetica, Arial,
 description_text_input.sizing_mode = "stretch_width"
 description_text_input.margin = 5
 
-# slider.sizing_mode = "scale_both"
-slider.width = 590
+slider.sizing_mode = "scale_both"
+# slider.width = 590
 slider.margin=15
 
-# keyword.sizing_mode = "scale_both"
-keyword.width = 615
+keyword.sizing_mode = "scale_both"
+# keyword.width = 615
 keyword.margin=15
 
 div_curr.style={'color': '#BF0A30', 'font-family': 'Helvetica Neue, Helvetica, Arial, sans-serif;', 'font-size': '1.1em'}
@@ -197,8 +197,8 @@ l = layout([
         [header],
         [description],
         [description2],
-        [description_slider, description_search, description_text_input],
-        [slider, keyword, file_input],
+        [description_slider, description_search],
+        [slider, keyword],
         [out_text],
         [plot],
         [div_curr],
